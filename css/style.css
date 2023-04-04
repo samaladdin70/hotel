@@ -1,0 +1,143 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.navbar {
+    z-index: 2;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+
+.nav-link {
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.nav-link:hover:not(.activated) {
+    color: #c2bfbf;
+}
+
+.nav-link:visited {
+    color: grey;
+}
+
+#hero {
+    background-image: url("../img/Beach1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 676px;
+    overflow-x: hidden !important;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    border: 10px solid #be8047;
+}
+
+nav .logo {
+    width: 5%;
+
+}
+
+#hero>.logo {
+    width: 5%;
+    left: 0;
+    right: 0;
+    margin: 70px auto;
+    color: #be8047;
+}
+
+#hero>h5 {
+    margin-top: 50px;
+    width: 5%;
+    left: 0;
+    right: 0;
+    margin: 150px auto;
+    color: whitesmoke;
+}
+
+#hero>h1 {
+    color: whitesmoke;
+    margin: 200px auto;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+#hero>p {
+    color: whitesmoke;
+    margin: 270px auto;
+    text-decoration: underline;
+}
+
+#hero button {
+    bottom: 15%;
+    width: 200px
+}
+
+#hero .left {
+    left: 15vw;
+}
+
+#hero .right {
+    left: calc(15% + 220px);
+}
+
+.hotel {
+    /* width: inherit; */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+/* my classes */
+.activated {
+    font-weight: bold;
+    color: grey;
+}
+
+.activated:hover {
+    color: whitesmoke;
+}
+
+.font-cardo {
+    font-family: 'Cardo', serif;
+}
+
+@media (max-width : 700px) {
+    #hero .left {
+        left: 5%;
+    }
+
+    #hero .right {
+        left: calc(5% + 220px);
+    }
+}
+
+@media (max-width : 490px) {
+    #hero button {
+        width: 150px;
+    }
+
+    #hero .left {
+        left: 1%;
+    }
+
+    #hero .right {
+        left: calc(1% + 155px);
+    }
+}
